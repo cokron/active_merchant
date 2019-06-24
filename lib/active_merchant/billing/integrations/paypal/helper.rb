@@ -23,7 +23,6 @@ module ActiveMerchant #:nodoc:
           def initialize(order, account, options = {})
             super
             add_field('cmd', '_ext-enter')
-            add_field('redirect_cmd', '_xclick')
             add_field('quantity', 1)
             add_field('item_name', 'Store purchase')
             add_field('no_shipping', '1')

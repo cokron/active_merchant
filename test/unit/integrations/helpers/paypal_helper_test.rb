@@ -10,7 +10,6 @@ class PaypalHelperTest < Test::Unit::TestCase
   
   def test_static_fields
     assert_field 'cmd', '_ext-enter'
-    assert_field 'redirect_cmd', '_xclick'
     assert_field 'quantity', '1'
     assert_field 'item_name', 'Store purchase'
     assert_field 'no_shipping', '1'
